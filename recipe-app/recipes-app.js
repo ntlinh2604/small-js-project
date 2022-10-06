@@ -96,7 +96,7 @@ function addMeal(mealData, random = false) {
         showMealInfo(mealData);
     });
 
-    meals.appendChild(meal);
+    mealsEl.appendChild(meal);
 }
 
 function addMealLS(mealId) {
@@ -125,7 +125,7 @@ async function fetchFavMeals() {
     favoriteContainer.innerHTML = '';
 
     const mealIds = getMealsLS();
-    const meals = [];
+    // const meals = [];
     for (let i = 0; i < mealIds.length; i++) {
         const mealId = mealIds[i];
         meal = await getMealById(mealId);
