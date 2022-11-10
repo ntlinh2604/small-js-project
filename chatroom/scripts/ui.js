@@ -43,7 +43,7 @@ class ChatUI {
     })
     })
 
-    if(chatList.children.length) return  clearchat.style.display='block'
+    
     
 
 
