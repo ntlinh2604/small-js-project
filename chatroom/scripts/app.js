@@ -5,7 +5,10 @@ const newChatForm = document.querySelector('.new-chat');
 const newNameForm = document.querySelector('.new-name');
 const updateMssg =document.querySelector('.update-mssg')
 const rooms = document.querySelector('.chat-rooms');
+const clearchat = document.querySelector('.clear-chat');
 
+
+    
 
 //add a new chat
 newChatForm.addEventListener('submit', e =>{
@@ -41,6 +44,8 @@ rooms.addEventListener('click', e =>{
         })
     }
 })
+//clearchat
+
 
 
 //check local storage for a name
@@ -54,4 +59,9 @@ const chatroom = new Chatroom('gaming', username)
 //get chat and render
 chatroom.getChats((data) => {//from datas get from the callback, do something with it
     chatUI.render(data)
+    
 })
+
+//clear chat
+
+    

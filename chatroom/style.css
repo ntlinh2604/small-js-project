@@ -24,3 +24,17 @@
     text-align: center;
     margin: 20px auto;
 }
+
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+}
+.delete-msg{
+    vertical-align: center;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    border: none;
+    width: 30px;
+    height: 30px;
+}

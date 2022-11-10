@@ -23,10 +23,14 @@ class Chatroom {
             .where('room', '==', this.room)//get room whatever we pass in chatroom
             .orderBy('created_at')
             .onSnapshot(snapshot => {
+              
             snapshot.docChanges().forEach(change => {
+                
                 if(change.type === 'added'){
                     //update the ui
-                    callback(change.doc.data())//get all data added
+                    
+                    callback(change.doc)//get all data added-nguyen dam nay goi la data
+                    
                 }
             })
         })
@@ -46,6 +50,7 @@ class Chatroom {
             this.unsub();//dont save the change anymore
         }
     }
+
 }
 
 // const chatroom = new Chatroom('gaming', 'katze')
