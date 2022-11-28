@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+<body>
+    <div id="header">
+            
+        <ul id="nav">
+                <li><a href="../../index.html">home</a></li>
+                <li><a href="../../index.html">games</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+    
+        </ul>
+        <!-- mobile menu button -->
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+        </div>
+        <!-- search button -->
+        <div class="search-btn">
+            <i class="search-icon ti-search"></i>
+        </div>
+        
+    </div>
+    
+    <div class="wrapper">
+        <div class="button-lang">
+            <button id="en" class="lang">EN</button>
+            <span class="separate">|</span>
+            <button id="de" class="lang">DE</button>
+        </div>
+        <span>&#128514;</span>
+        <p id="joke-line1"></p>
+        <p style="display: none; color: white;" id="joke-line2" ></p>
+        
+        <button id="btn">Get Random Joke</button>
+    </div>
+
+    <!-- Script -->
+    <script src="random-joke.js"></script>
+</body>
+</html>
